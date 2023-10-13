@@ -19,6 +19,7 @@ defmodule PersonalWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    get "/resume", PageController, :resume
   end
 
   scope "/admin" do
