@@ -3,3 +3,26 @@
 @import "tailwindcss/utilities";
 
 /* This file is for your main application CSS */
+
+.navbar {
+  --tw-border-opacity: 1;
+  align-items: center;
+  border-bottom-width: 2px;
+  border-color: #e89c3f;
+  border-color: rgba(232, 156, 63, var(--tw-border-opacity));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:0
+}
+
+.navbar-container {
+  align-self: flex-start;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  line-height: 1.5;
+  list-style-type: none;
+  margin: 0 .75rem;
+  padding: 1rem;
+  text-align:justify
+}

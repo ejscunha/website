@@ -1,5 +1,39 @@
 <main class="px-4 py-20 sm:px-6 lg:px-8">
   <div class="mx-auto max-w-6xl">
+    <header class="header">
+      <nav class="container">
+        <div class="flex justify-center">
+          <span class="text-6xl font-bold">
+            Eduardo Cunha
+          </span>
+        </div>
+        <ul class="flex justify-center border-b-2 border-black">
+          <li class="text-2xl text-justify p-4 mx-3">
+            <span :if={@conn.request_path == ~p"/"} class="font-bold" href={~p"/"}>
+              About
+            </span>
+            <a :if={@conn.request_path != ~p"/"} class="text-sky-900 hover:text-amber-600 font-bold underline" href={~p"/"}>
+              About
+            </a>
+          </li>
+
+          <li class="text-2xl text-justify p-4 mx-3">
+            <a class="text-sky-900 hover:text-amber-600 font-bold underline" href={~p"/resume"}>
+              Resume
+            </a>
+          </li>
+
+          <li class="text-2xl text-justify p-4 mx-3">
+            <span :if={@conn.request_path == ~p"/demos"} class="font-bold" href={~p"/demos"}>
+              Demos
+            </span>
+            <a :if={@conn.request_path != ~p"/demos"} class="text-sky-900 hover:text-amber-600 font-bold underline" href={~p"/demos"}>
+              Demos
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <%= @inner_content %>
   </div>
 </main>

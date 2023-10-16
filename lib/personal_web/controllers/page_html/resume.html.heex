@@ -1,272 +1,280 @@
-<div>
-  <section id="bio" class="flex flex-row flex-wrap gap-5 mb-5">
-    <div class="w-60 md:w-80">
-      <img class="rounded-full" src={static_path("/images/photo.jpg")} />
-    </div>
-    <div class="flex flex-col justify-start">
-      <h1 class="font-bold mb-1 text-5xl md:text-6xl">Eduardo Cunha</h1>
-      <h2 class="text-gray-700 mt-1 text-3xl md:text-4xl font-bold mb-2">Software Engineer</h2>
-      <section id="basics" class="text-md md:text-lg">
-        <div class="flex flex-row gap-4 items-center ml-4">
-          <.icon name="hero-envelope" />
-          <a
-            class="text-sky-900 hover:text-amber-700 underline hover:underline"
-            href="mailto:ejscunha@gmail.com"
-          >
-            ejscunha@gmail.com
+<main class="px-4 py-20 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-6xl">
+    <section id="bio" class="flex flex-row flex-wrap gap-5 mb-5">
+      <div class="w-60 md:w-80">
+        <img class="rounded-full" src={static_path("/images/photo.jpg")} />
+      </div>
+      <div class="flex flex-col justify-start">
+        <h1 class="font-bold mb-1 text-5xl md:text-6xl">Eduardo Cunha</h1>
+        <h2 class="text-gray-700 mt-1 text-3xl md:text-4xl font-bold mb-2">Software Engineer</h2>
+        <section id="basics" class="text-md md:text-lg">
+          <div class="flex flex-row gap-4 items-center ml-4">
+            <.icon name="hero-envelope" />
+            <a
+              class="text-sky-900 hover:text-amber-700 underline hover:underline"
+              href="mailto:ejscunha@gmail.com"
+            >
+              ejscunha@gmail.com
+            </a>
+          </div>
+          <div class="flex flex-row gap-4 items-center ml-4">
+            <.icon name="hero-phone" />
+            <a
+              class="text-sky-900 hover:text-amber-700 underline hover:underline"
+              href="tel:+351927895565"
+            >
+              (+351) 927 895 565
+            </a>
+          </div>
+          <div class="flex flex-row gap-4 items-center ml-4">
+            <.icon name="hero-home" />
+            <span>
+              Rua das Pereiras 156, 2785-173 São Domingos de Rana, Portugal
+            </span>
+          </div>
+        </section>
+      </div>
+    </section>
+    <section id="work" class="flex flex-col mb-5">
+      <h2 class="text-gray-500 font-bold mb-1 text-3xl md:text-4xl">Work</h2>
+      <hr />
+      <div class="mt-3">
+        <div class="flex flex-col mb-3">
+          <h3 class="font-bold text-2xl">Hawku</h3>
+          <h4 class="text-gray-700 font-bold text-lg">Senior Fullstack Engineer</h4>
+          <span class="text-gray-500">August 2022 to October 2023</span>
+          <a class="text-sky-900 hover:text-amber-700 underline" href="https://www.hawku.com">
+            https://www.hawku.com
           </a>
+          <div class="mt-1 font-light">
+            Development of the backend and frontend of the marketplace application, including development of the data ingestion system.
+            <ul class="list-disc mt-1 ml-10">
+              <li>Add support to multiple currencies and networks in the marketplace</li>
+              <li>
+                Created backoffice to manage marketplace collections and other configurations
+              </li>
+              <li>Created sales bots for Twitter and Discord</li>
+              <li>Added REST API endpoints to interact with the marketplace programmatically</li>
+              <li>Add support to handle Seaport events from blockchain</li>
+              <li>
+                Created new workflow to add new collections to the system without requiring a system restart and reducing the time to add a new collection from several days to few minutes/hours
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="flex flex-row gap-4 items-center ml-4">
-          <.icon name="hero-phone" />
-          <a
-            class="text-sky-900 hover:text-amber-700 underline hover:underline"
-            href="tel:+351927895565"
-          >
-            (+351) 927 895 565
+        <div class="flex flex-col mb-3">
+          <h3 class="font-bold text-2xl">BlockFi</h3>
+          <h4 class="text-gray-700 font-bold text-lg">Senior Fullstack Engineer</h4>
+          <span class="text-gray-500">April 2021 to August 2022</span>
+          <a class="text-sky-900 hover:text-amber-700 underline" href="https://www.blockfi.com">
+            https://www.blockfi.com
           </a>
+          <div class="mt-1 font-light">
+            Working as part of the backoffice team and later the credit cards team.
+            <ul class="list-disc mt-1 ml-10">
+              <li>
+                Decoupling of client service backoffice application from giant monolith application
+              </li>
+              <li>
+                Devised and implemented patterns to decouple tightly coupled functions of the backoffice application from monolithic application
+              </li>
+              <li>Collaborated in the development of an internal API gateway</li>
+              <li>Maintain and develop new features for the credit card product</li>
+              <li>Maintain integration with several external services</li>
+              <li>
+                Manage daily scheduled jobs to update customers credit cards data and respective rewards
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="flex flex-row gap-4 items-center ml-4">
-          <.icon name="hero-home" />
-          <span>
-            Rua das Pereiras 156, 2785-173 São Domingos de Rana, Portugal
-          </span>
+        <div class="flex flex-col mb-3">
+          <h3 class="font-bold text-2xl">BOSE Pro</h3>
+          <h4 class="text-gray-700 font-bold text-lg">Senior Backend Engineer</h4>
+          <span class="text-gray-500">April 2020 to March 2021</span>
+          <a class="text-sky-900 hover:text-amber-700 underline" href="https://pro.bose.com">
+            https://pro.bose.com
+          </a>
+          <div class="mt-1 font-light">
+            Worked as a backend software engineer for the development of a next generation platform to control audio devices.
+            <ul class="list-disc mt-1 ml-10">
+              <li>
+                Collaborated in the design and architecture discussions for the new platform
+              </li>
+              <li>
+                Helped the backend team ramp up on using Elixir for the platform development
+              </li>
+              <li>Defined and implemented the patterns for the backend development</li>
+              <li>
+                Defined and implemented the protocol and communication mechanism between the backend and devices
+              </li>
+              <li>Established the self hosted monitoring infrastructure</li>
+            </ul>
+          </div>
         </div>
-      </section>
-    </div>
-  </section>
-  <section id="work" class="flex flex-col mb-5">
-    <h2 class="text-gray-500 font-bold mb-1 text-3xl md:text-4xl">Work</h2>
-    <hr />
-    <div class="mt-3">
-      <div class="flex flex-col mb-3">
-        <h3 class="font-bold text-2xl">Hawku</h3>
-        <h4 class="text-gray-700 font-bold text-lg">Senior Fullstack Engineer</h4>
-        <span class="text-gray-500">August 2022 to October 2023</span>
-        <a class="text-sky-900 hover:text-amber-700 underline" href="https://www.hawku.com">
-          https://www.hawku.com
-        </a>
-        <div class="mt-1 font-light">
-          Development of the backend and frontend of the marketplace application, including development of the data ingestion system.
-          <ul class="list-disc mt-1 ml-10">
-            <li>Add support to multiple currencies and networks in the marketplace</li>
-            <li>Created backoffice to manage marketplace collections and other configurations</li>
-            <li>Created sales bots for Twitter and Discord</li>
-            <li>Added REST API endpoints to interact with the marketplace programmatically</li>
-            <li>Add support to handle Seaport events from blockchain</li>
-            <li>
-              Created new workflow to add new collections to the system without requiring a system restart and reducing the time to add a new collection from several days to few minutes/hours
-            </li>
-          </ul>
+        <div class="flex flex-col mb-3">
+          <h3 class="font-bold text-2xl">Talkdesk</h3>
+          <h4 class="text-gray-700 font-bold text-lg">Senior Backend Engineer</h4>
+          <span class="text-gray-500">July 2017 to March 2020</span>
+          <a class="text-sky-900 hover:text-amber-700 underline" href="https://www.talkdesk.com">
+            https://www.talkdesk.com
+          </a>
+          <div class="mt-1 font-light">
+            Worked as a backend software engineer for the routing assignment team.
+            <ul class="list-disc mt-1 ml-10">
+              <li>Designed the architecture of the assignment system</li>
+              <li>Defined the patterns for the development of the assignment system</li>
+              <li>
+                Collaborated with the definition and implementation of monitoring of the system
+              </li>
+              <li>
+                Performed heavy refactors to make the system highly available and fault-tolerant
+              </li>
+              <li>Helped the team ramp up on using Elixir</li>
+              <li>
+                Developed the backend and frontend application to manage users attributes used for routing
+              </li>
+              <li>Helped the team ramp up on using React/JavaScript</li>
+              <li>
+                Designed the architecture of a new version of assignment system with attributes based routing
+              </li>
+              <li>Defined the patterns for the development of the new assignment system</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="flex flex-col mb-3">
-        <h3 class="font-bold text-2xl">BlockFi</h3>
-        <h4 class="text-gray-700 font-bold text-lg">Senior Fullstack Engineer</h4>
-        <span class="text-gray-500">April 2021 to August 2022</span>
-        <a class="text-sky-900 hover:text-amber-700 underline" href="https://www.blockfi.com">
-          https://www.blockfi.com
-        </a>
-        <div class="mt-1 font-light">
-          Working as part of the backoffice team and later the credit cards team.
-          <ul class="list-disc mt-1 ml-10">
-            <li>
-              Decoupling of client service backoffice application from giant monolith application
-            </li>
-            <li>
-              Devised and implemented patterns to decouple tightly coupled functions of the backoffice application from monolithic application
-            </li>
-            <li>Collaborated in the development of an internal API gateway</li>
-            <li>Maintain and develop new features for the credit card product</li>
-            <li>Maintain integration with several external services</li>
-            <li>
-              Manage daily scheduled jobs to update customers credit cards data and respective rewards
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="flex flex-col mb-3">
-        <h3 class="font-bold text-2xl">BOSE Pro</h3>
-        <h4 class="text-gray-700 font-bold text-lg">Senior Backend Engineer</h4>
-        <span class="text-gray-500">April 2020 to March 2021</span>
-        <a class="text-sky-900 hover:text-amber-700 underline" href="https://pro.bose.com">
-          https://pro.bose.com
-        </a>
-        <div class="mt-1 font-light">
-          Worked as a backend software engineer for the development of a next generation platform to control audio devices.
-          <ul class="list-disc mt-1 ml-10">
-            <li>Collaborated in the design and architecture discussions for the new platform</li>
-            <li>Helped the backend team ramp up on using Elixir for the platform development</li>
-            <li>Defined and implemented the patterns for the backend development</li>
-            <li>
-              Defined and implemented the protocol and communication mechanism between the backend and devices
-            </li>
-            <li>Established the self hosted monitoring infrastructure</li>
-          </ul>
-        </div>
-      </div>
-      <div class="flex flex-col mb-3">
-        <h3 class="font-bold text-2xl">Talkdesk</h3>
-        <h4 class="text-gray-700 font-bold text-lg">Senior Backend Engineer</h4>
-        <span class="text-gray-500">July 2017 to March 2020</span>
-        <a class="text-sky-900 hover:text-amber-700 underline" href="https://www.talkdesk.com">
-          https://www.talkdesk.com
-        </a>
-        <div class="mt-1 font-light">
-          Worked as a backend software engineer for the routing assignment team.
-          <ul class="list-disc mt-1 ml-10">
-            <li>Designed the architecture of the assignment system</li>
-            <li>Defined the patterns for the development of the assignment system</li>
-            <li>
-              Collaborated with the definition and implementation of monitoring of the system
-            </li>
-            <li>
-              Performed heavy refactors to make the system highly available and fault-tolerant
-            </li>
-            <li>Helped the team ramp up on using Elixir</li>
-            <li>
-              Developed the backend and frontend application to manage users attributes used for routing
-            </li>
-            <li>Helped the team ramp up on using React/JavaScript</li>
-            <li>
-              Designed the architecture of a new version of assignment system with attributes based routing
-            </li>
-            <li>Defined the patterns for the development of the new assignment system</li>
-          </ul>
+        <div class="flex flex-col">
+          <h3 class="font-bold text-2xl">SAPO</h3>
+          <h4 class="text-gray-700 font-bold text-lg">Fullstack Engineer</h4>
+          <span class="text-gray-500">May 2013 to July 2017</span>
+          <a class="text-sky-900 hover:text-amber-700 underline" href="https://www.sapo.pt">
+            https://www.sapo.pt
+          </a>
+          <div class="mt-1 font-light">
+            Worked as a fullstack software engineer for the Intranet team and for an experimental projects team.
+            <ul class="list-disc mt-1 ml-10">
+              <li>
+                Collaborated in designing and developing a new intranet for the company with the integration of several external tools
+              </li>
+              <li>
+                Helped establishing the patterns to integrate with external tools like GitLab, Trac, Mailman and others
+              </li>
+              <li>
+                Implemented a global search engine, integrated in the intranet, for the whole intranet tools using Solr
+              </li>
+              <li>Managed the infrastructure of the intranet ecosystem using LXC containers</li>
+              <li>Created a deployment platform using Rancher to deploy experimental projects</li>
+              <li>Created the infrastructure to create CI/CD pipelines using GitLab</li>
+              <li>
+                Maintained and developed an experimental service like Medium which shared the ads revenue
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="flex flex-col">
-        <h3 class="font-bold text-2xl">SAPO</h3>
-        <h4 class="text-gray-700 font-bold text-lg">Fullstack Engineer</h4>
-        <span class="text-gray-500">May 2013 to July 2017</span>
-        <a class="text-sky-900 hover:text-amber-700 underline" href="https://www.sapo.pt">
-          https://www.sapo.pt
-        </a>
-        <div class="mt-1 font-light">
-          Worked as a fullstack software engineer for the Intranet team and for an experimental projects team.
-          <ul class="list-disc mt-1 ml-10">
-            <li>
-              Collaborated in designing and developing a new intranet for the company with the integration of several external tools
-            </li>
-            <li>
-              Helped establishing the patterns to integrate with external tools like GitLab, Trac, Mailman and others
-            </li>
-            <li>
-              Implemented a global search engine, integrated in the intranet, for the whole intranet tools using Solr
-            </li>
-            <li>Managed the infrastructure of the intranet ecosystem using LXC containers</li>
-            <li>Created a deployment platform using Rancher to deploy experimental projects</li>
-            <li>Created the infrastructure to create CI/CD pipelines using GitLab</li>
-            <li>
-              Maintained and developed an experimental service like Medium which shared the ads revenue
-            </li>
-          </ul>
+    </section>
+    <section id="education" class="flex flex-col mb-5">
+      <h2 class="text-gray-500 font-bold mb-1 text-3xl md:text-4xl">Education</h2>
+      <hr />
+      <div class="mt-3">
+        <div class="flex flex-col">
+          <h3 class="font-bold text-2xl">Técnico Lisboa</h3>
+          <h4 class="text-gray-700 font-bold text-lg">BSc in Computer Science and Engineering</h4>
+          <span class="text-gray-500">September 2004 to July 2011</span>
+        </div>
+        <div class="flex flex-col">
+          <h3 class="font-bold text-2xl">Técnico Lisboa</h3>
+          <h4 class="text-gray-700 font-bold text-lg">MSc in Computer Science and Engineering</h4>
+          <span class="text-gray-500">September 2011 to November 2014</span>
         </div>
       </div>
-    </div>
-  </section>
-  <section id="education" class="flex flex-col mb-5">
-    <h2 class="text-gray-500 font-bold mb-1 text-3xl md:text-4xl">Education</h2>
-    <hr />
-    <div class="mt-3">
-      <div class="flex flex-col">
-        <h3 class="font-bold text-2xl">Técnico Lisboa</h3>
-        <h4 class="text-gray-700 font-bold text-lg">BSc in Computer Science and Engineering</h4>
-        <span class="text-gray-500">September 2004 to July 2011</span>
-      </div>
-      <div class="flex flex-col">
-        <h3 class="font-bold text-2xl">Técnico Lisboa</h3>
-        <h4 class="text-gray-700 font-bold text-lg">MSc in Computer Science and Engineering</h4>
-        <span class="text-gray-500">September 2011 to November 2014</span>
-      </div>
-    </div>
-  </section>
-  <section id="languages" class="flex flex-col mb-5">
-    <h2 class="text-gray-500 font-bold mb-1 text-3xl md:text-4xl">Languages</h2>
-    <hr />
-    <div class="mt-3">
-      <div class="flex flex-col">
-        <div>
-          <span class="font-bold text-lg">Portuguese</span> Native
-        </div>
-        <div>
-          <span class="font-bold text-lg">English</span> Fluent
+    </section>
+    <section id="languages" class="flex flex-col mb-5">
+      <h2 class="text-gray-500 font-bold mb-1 text-3xl md:text-4xl">Languages</h2>
+      <hr />
+      <div class="mt-3">
+        <div class="flex flex-col">
+          <div>
+            <span class="font-bold text-lg">Portuguese</span> Native
+          </div>
+          <div>
+            <span class="font-bold text-lg">English</span> Fluent
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section id="skills" class="flex flex-col">
-    <h2 class="text-gray-500 font-bold mb-1 text-3xl md:text-4xl">Skills</h2>
-    <hr />
-    <div class="flex flex-col md:flex-row md:flex-wrap gap-3 mt-3 font-light">
-      <div class="flex flex-col mb-3">
-        <h2 class="font-bold text-2xl">Programming languages</h2>
-        <div class="flex flex-col mt-1">
-          <span class="text-gray-500 font-bold text-lg">Advanced</span>
-          <ul class="list-none">
-            <li>Elixir</li>
-          </ul>
+    </section>
+    <section id="skills" class="flex flex-col">
+      <h2 class="text-gray-500 font-bold mb-1 text-3xl md:text-4xl">Skills</h2>
+      <hr />
+      <div class="flex flex-col md:flex-row md:flex-wrap justify-between gap-4 mt-3 font-light">
+        <div class="flex flex-col mb-3">
+          <h2 class="font-bold text-2xl">Programming languages</h2>
+          <div class="flex flex-col mt-1">
+            <span class="text-gray-500 font-bold text-lg">Advanced</span>
+            <ul class="list-none">
+              <li>Elixir</li>
+            </ul>
+          </div>
+          <div class="flex flex-col mt-1">
+            <span class="text-gray-500 font-bold text-lg">Intermediate</span>
+            <ul class="list-none">
+              <li>Javascript/Typescript</li>
+              <li>Python</li>
+              <li>Ruby</li>
+              <li>NodeJS</li>
+            </ul>
+          </div>
         </div>
-        <div class="flex flex-col mt-1">
-          <span class="text-gray-500 font-bold text-lg">Intermediate</span>
-          <ul class="list-none">
-            <li>Javascript/Typescript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>NodeJS</li>
-          </ul>
+        <div class="flex flex-col mb-3">
+          <h2 class="font-bold text-2xl">Frameworks and libraries</h2>
+          <div class="flex flex-col mt-1">
+            <span class="text-gray-500 font-bold text-lg">Advanced</span>
+            <ul class="list-none">
+              <li>Phoenix</li>
+              <li>Liveview</li>
+              <li>Ecto</li>
+            </ul>
+          </div>
+          <div class="flex flex-col mt-1">
+            <span class="text-gray-500 font-bold text-lg">Intermediate</span>
+            <ul class="list-none">
+              <li>Absinthe</li>
+              <li>Riak Core</li>
+              <li>React</li>
+              <li>Django</li>
+              <li>Flask</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col mb-3">
+          <h2 class="font-bold text-2xl">DevOps</h2>
+          <div class="flex flex-col mt-1">
+            <span class="text-gray-500 font-bold text-lg">Intermediate</span>
+            <ul class="list-none">
+              <li>AWS</li>
+              <li>GCP</li>
+              <li>CI/CD</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <h2 class="font-bold text-2xl">Other tools</h2>
+          <div class="flex flex-col mt-1">
+            <span class="text-gray-500 font-bold text-lg">Advanced</span>
+            <ul class="list-none">
+              <li>Git</li>
+            </ul>
+          </div>
+          <div class="flex flex-col mt-1">
+            <span class="text-gray-500 font-bold text-lg">Intermediate</span>
+            <ul class="list-none">
+              <li>Postgres</li>
+              <li>Docker</li>
+              <li>RabbitMQ</li>
+              <li>MQTT</li>
+              <li>GraphQL</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="flex flex-col mb-3">
-        <h2 class="font-bold text-2xl">Frameworks and libraries</h2>
-        <div class="flex flex-col mt-1">
-          <span class="text-gray-500 font-bold text-lg">Advanced</span>
-          <ul class="list-none">
-            <li>Phoenix</li>
-            <li>Liveview</li>
-            <li>Ecto</li>
-          </ul>
-        </div>
-        <div class="flex flex-col mt-1">
-          <span class="text-gray-500 font-bold text-lg">Intermediate</span>
-          <ul class="list-none">
-            <li>Absinthe</li>
-            <li>Riak Core</li>
-            <li>React</li>
-            <li>Django</li>
-            <li>Flask</li>
-          </ul>
-        </div>
-      </div>
-      <div class="flex flex-col mb-3">
-        <h2 class="font-bold text-2xl">DevOps</h2>
-        <div class="flex flex-col mt-1">
-          <span class="text-gray-500 font-bold text-lg">Intermediate</span>
-          <ul class="list-none">
-            <li>AWS</li>
-            <li>GCP</li>
-            <li>CI/CD</li>
-          </ul>
-        </div>
-      </div>
-      <div class="flex flex-col">
-        <h2 class="font-bold text-2xl">Other tools</h2>
-        <div class="flex flex-col mt-1">
-          <span class="text-gray-500 font-bold text-lg">Advanced</span>
-          <ul class="list-none">
-            <li>Git</li>
-          </ul>
-        </div>
-        <div class="flex flex-col mt-1">
-          <span class="text-gray-500 font-bold text-lg">Intermediate</span>
-          <ul class="list-none">
-            <li>Postgres</li>
-            <li>Docker</li>
-            <li>RabbitMQ</li>
-            <li>MQTT</li>
-            <li>GraphQL</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
+    </section>
+  </div>
+</main>
