@@ -35,7 +35,7 @@ defmodule Personal.MixProject do
       {:bandit, "~> 1.4"},
       {:dns_cluster, "~> 0.1"},
       {:esbuild, "~> 0.8", runtime: Mix.env() == :dev},
-      {:jason, "~> 1.2"},
+      {:jason, "~> 1.4"},
       {:phoenix, "~> 1.7"},
       {:phoenix_html, "~> 3.3"},
       {:phoenix_live_dashboard, "~> 0.8"},
@@ -43,7 +43,7 @@ defmodule Personal.MixProject do
       {:phoenix_live_view, "~> 0.20"},
       {:tailwind, "~> 0.2", runtime: Mix.env() == :dev},
       {:telemetry_metrics, "~> 0.6"},
-      {:telemetry_poller, "~> 1.0"},
+      {:telemetry_poller, "~> 1.1"},
       {:floki, "~> 0.36", only: :test}
     ]
   end
