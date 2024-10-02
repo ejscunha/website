@@ -28,15 +28,15 @@
           </li>
 
           <li class="text-2xl text-justify p-4 mx-3">
-            <span :if={@conn.request_path == ~p"/demos"} class="font-bold" href={~p"/demos"}>
-              Demos
+            <span :if={@conn.request_path == ~p"/oss"} class="font-bold" href={~p"/oss"}>
+              OSS
             </span>
             <a
-              :if={@conn.request_path != ~p"/demos"}
+              :if={@conn.request_path != ~p"/oss"}
               class="text-sky-900 hover:text-amber-600 font-bold underline"
-              href={~p"/demos"}
+              href={~p"/oss"}
             >
-              Demos
+              OSS
             </a>
           </li>
         </ul>

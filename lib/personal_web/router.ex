@@ -20,7 +20,7 @@ defmodule PersonalWeb.Router do
 
     get "/", PageController, :home
     get "/resume", PageController, :resume
-    get "/demos", PageController, :demos
+    get "/oss", PageController, :oss
   end
 
   scope "/admin" do

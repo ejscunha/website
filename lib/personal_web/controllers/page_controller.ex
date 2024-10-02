@@ -13,9 +13,9 @@ defmodule PersonalWeb.PageController do
     |> render(:resume, layout: false)
   end
 
-  def demos(conn, _params) do
+  def oss(conn, _params) do
     conn
-    |> assign(:page_title, "Demos")
-    |> render(:demos)
+    |> assign(:page_title, "OSS")
+    |> render(:oss)
   end
 end
