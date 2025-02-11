@@ -32,7 +32,7 @@ defmodule Personal.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:bandit, "~> 1.5"},
+      {:bandit, "~> 1.6"},
       {:dns_cluster, "~> 0.1"},
       {:esbuild, "~> 0.8", runtime: Mix.env() == :dev},
       {:jason, "~> 1.4"},
@@ -40,11 +40,11 @@ defmodule Personal.MixProject do
       {:phoenix_html, "~> 3.3"},
       {:phoenix_live_dashboard, "~> 0.8"},
       {:phoenix_live_reload, "~> 1.5", only: :dev},
-      {:phoenix_live_view, "~> 0.20"},
+      {:phoenix_live_view, "~> 1.0"},
       {:tailwind, "~> 0.2", runtime: Mix.env() == :dev},
       {:telemetry_metrics, "~> 0.6"},
       {:telemetry_poller, "~> 1.1"},
-      {:floki, "~> 0.36", only: :test}
+      {:floki, "~> 0.37", only: :test}
     ]
   end
 
